@@ -1,7 +1,7 @@
 * {
-
   font-family:'Montserrat', sans-serif;
   box-sizing: border-box;
+
 }
 
 body {
@@ -12,23 +12,26 @@ body {
   background-position: center;
   padding: 0;
   margin: 0;
+  max-width: ;
+
 }
 
 .hero {
-  height: 50vh;
-  width: 100%;
+  height: 50%;
+  max-width: 100%;
+}
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 10%;
+    padding-right: 10%;
   
-}
+  }
 
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 45px;
-  padding-left: 10%;
-  padding-right: 10%;
 
-}
 
 .logo{
   color: black;
@@ -128,7 +131,7 @@ h4 {
 .about {
   width: 100%;
   padding: 100px 0px;
-  margin-top: 10%;
+  margin-top: 40%;
 }
 
 .about img {
@@ -305,4 +308,26 @@ footer p:nth-child(1) {
 
 .projects-link a {
   margin: 5px;
+}
+/* FOr mobile devices */
+
+@media (max-width: 480px) {
+
+   .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:min-content;
+    font-size: 10px;
+  }
+
+  .nav-bar ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
