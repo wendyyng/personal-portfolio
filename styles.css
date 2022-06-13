@@ -1,7 +1,14 @@
 * {
   font-family:'Montserrat', sans-serif;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 
+}
+
+html {
+  width: 93vw;
+  margin-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -9,56 +16,62 @@ body {
   background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
   background-image: url(https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?cs=srgb&dl=pexels-henry-%26-co-2341290.jpg&fm=jpg);
   background-size: cover;
-  background-position: center;
   padding: 0;
   margin: 0;
-  max-width: ;
+  /* max-height: max-content; */
 
 }
 
 .hero {
   height: 50%;
   max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3em;
 }
 
-  nav{
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
+    /* padding-top: 2em;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 10%; */
   
-  }
+}
 
-
-
-.logo{
+/* .logo{
   color: black;
   font-weight: bold;
   font-size: 30px;
-  letter-spacing: 1px;
+  letter-spacing: 5em;
   cursor: pointer;
-}
+} */
 
-.logo:hover{
+/* .logo:hover{
   transform: scale(1.15);
-}
+} */
 
-nav ul li {
+#logo {
+  width: 10em;
+  height: 10em;
+
+} 
+
+.nav-bar ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 25px;
+  padding: 1em 1em;
 }
 
-nav ul li a {
+.nav-bar ul li a {
   color: black;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-nav ul li:hover {
+.nav-bar ul li:hover {
   transform: scale(1.15);
 }
 
@@ -78,27 +91,29 @@ nav ul li:hover {
 }
 
 .content{
-  position: absolute;
+  position: relative;
   top: 40%;
   left: 10%;
   transform: translateY(-50%);
-  margin: 4%;
+  margin: 5em;
+  margin-top: 10em;
 }
 
-h1 {
-  margin: 20px 0px;
-  font-size: 65px;
+#content-two {
+  margin: 0.5em 0em;
+  font-size: 4em;
+  font-weight: bold;
 }
 
-h3 {
-  font-size: 25px;
-  margin-bottom: 40px;
-}
+#content-three {
+  font-size: 2em;
+   margin-bottom: 1em; 
+ }
 
-h4 {
-  letter-spacing: 2px;
-  font-size: 20px;
-}
+#content-one {
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+} 
 
 /* .newsletter form {
   width: 380px;
@@ -128,52 +143,56 @@ h4 {
   right: 6px;
 } */
 
-.about {
-  width: 100%;
-  padding: 100px 0px;
-  margin-top: 40%;
-}
+/* .about {
+  /* width: 100%; */
+  /* padding: 100px 0px;
+  margin-top: 40%; */
 
-.about img {
+
+#about-image {
   height: auto;
-  width: 430px;
+  width: 25em;
+  margin: 2em;
 }
 
 .about-text{
-  width: 550px;
-  margin-left: 15px;
+  width: 20em;
+  margin-left: 5em;
 }
 
 .main {
-  width: 1130px;
-  max-width: 95%;
-  margin: 0 auto;
+  /* width: 1130px;  */
+  /* max-width: 95%; */
+  /* margin: 0 auto; */
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
+.about-text {
+  width: 37%;
+}
 .about-text h2 {
   color: black;
-  font-size: 75px;
+  font-size: 5em;
   text-transform: capitalize;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
-.about-text h5 {
-  /* color: white; */
+/* .about-text h5 {
+  color: white; 
   letter-spacing: 2px;
-  font-size: 22px;
+  font-size: 5em;
   margin-bottom: 25px;
   text-transform: capitalize;
-}
+} */
 
 .about-text p{
   color: black;
-  letter-spacing: 1px;
-  line-height: 28px;
-  font-size: 18px;
-  margin-bottom: 45px;
+  /* letter-spacing: 0.1em; */
+  /* line-height: 28px; */
+  font-size: 1.3em;
+  /* margin-bottom: 45px; */
 
 }
 
@@ -181,31 +200,31 @@ button, .button, .button-two {
   background-color: darkgray;
   color: white;
   text-decoration: none;
-  border: 2px solid transparent;
+  border: 0.5em solid transparent;
   font-weight: bold;
-  padding: 13px 30px;
+  padding: 0.8em 0.8em;
   transition: .4s;
-  border-radius: 30px;
+  border-radius: 2em;
 }
 
 button:hover, .button:hover, .button-two:hover {
   background-color: transparent;
-  border: 2px solid white;
+  border: 0.1em solid white;
   cursor: pointer;
   transform: scale(1.2);
 }
 
 #projects {
-  width: 100%;
-  padding: 50px 0px;
+  /* width: 100%; */
+  padding: 1em 0px;
   margin-bottom: 80px;
 }
 
 #projects h2, #skills h2 {
   color: black;
-  font-size: 75px;
-  width: 1130px;
-  margin: 30px auto;
+  font-size: 5em;
+  width: 5em;
+  margin: 2em auto;
   text-align: center;
 }
 
@@ -213,28 +232,28 @@ button:hover, .button:hover, .button-two:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  min-height: 10em;
 }
 
 .card {
-  height: 365px;
-  width: 335px;
-  padding: 20px 35px;
+  height: 20em;
+  width: 15em;
+  padding: 2em 2em;
   background: rgb(212, 203, 203);
-  border-radius: 20px;
-  margin: 15px;
+  border-radius: 1.5em;
+  margin: 2.5em;
   position: relative;
   overflow: hidden;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 
 .card img {
   width: 10%;
-  font-size: 50px;
+  font-size: 5em;
   display: block;
   text-align: center;
   margin: 25px 0px;
@@ -300,6 +319,10 @@ footer p:nth-child(1) {
   font-size: 20px;
 }
 
+#project-title {
+  width: 100vw;
+}
+
 .projects-link {
   display: flex;
   flex-direction: column;
@@ -312,16 +335,29 @@ footer p:nth-child(1) {
 /* FOr mobile devices */
 
 @media (max-width: 480px) {
+  body {
+    max-width: fit-content;
+  }
+  #logo {
+    margin-left: 8em;
 
+  }
+  .hero {
+    flex-direction: column;
+    min-height: fit-content;
+
+  }
    .nav-bar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:min-content;
-    font-size: 10px;
+    /* width:min-content; */
+    /* font-size: 10px; */
   }
+
+
 
   .nav-bar ul {
     display:flex;
@@ -330,4 +366,35 @@ footer p:nth-child(1) {
     align-items: center;
   }
 
+
+  .content {
+    margin-top: 15em;
+  }
+  .main, .contact-links{
+    flex-direction: column;
+  }
+
+
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  #about {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  footer > .contact-links {
+    flex-direction: row;
+  }
+
+  #about-image {
+    margin-left: 5em;
+  }
 }
