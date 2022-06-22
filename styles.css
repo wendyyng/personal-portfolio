@@ -5,7 +5,10 @@
 }  */
 
 html {
-  width: 93vw;
+  /* max-width: 93vw; */
+  margin-right: 0;
+  padding: 0;
+  margin: 0;
   font-family:'Montserrat', sans-serif;
 }
 
@@ -14,6 +17,8 @@ body {
   background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
   background-image: url(https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?cs=srgb&dl=pexels-henry-%26-co-2341290.jpg&fm=jpg);
   background-size: cover;
+  padding: 0;
+  margin: 0;
   /* max-height: max-content; */
 
 }
@@ -87,11 +92,11 @@ body {
 }
 
 .content{
-  position: relative;
+  /* position: relative; */
   top: 40%;
-  left: 10%;
+  /* left: 50%; */
   transform: translateY(-50%);
-  margin: 5em;
+  margin: 8em;
   margin-top: 10em;
 }
 
@@ -331,16 +336,18 @@ footer p:nth-child(1) {
 /* FOr mobile devices */
 
 @media (max-width: 480px) {
-  body {
-    max-width: fit-content;
+  html, body {
+    /* max-width: fit-content; */
+    width: 90vw;
   }
+
   #logo {
     margin-left: 8em;
 
   }
   .hero {
     flex-direction: column;
-    min-height: fit-content;
+    /* min-height: fit-content; */
 
   }
    .nav-bar {
@@ -353,6 +360,9 @@ footer p:nth-child(1) {
     /* font-size: 10px; */
   }
 
+  .about-text > p {
+    width: 10em;
+  }
 
 
   .nav-bar ul {
@@ -369,8 +379,6 @@ footer p:nth-child(1) {
   .main, .contact-links{
     flex-direction: column;
   }
-
-
 
   #projects {
     display: flex;
