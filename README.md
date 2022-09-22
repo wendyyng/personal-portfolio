@@ -1,5 +1,5 @@
 # My Personal Portfolio
-My first personal portfolio website that I built using pure HTML and CSS.
+My first personal portfolio website that I built using plain HTML and CSS.
 ## Link
 https://wendyng.netlify.app/
 
